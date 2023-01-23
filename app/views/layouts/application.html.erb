@@ -9,10 +9,10 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <div class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <%= link_to "BBQ!", root_path, class: 'navbar-brand' %>
+        <%= link_to t('app.name'), root_path, class: 'navbar-brand' %>
 
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
@@ -44,11 +44,11 @@
           <p>Тест</p>
         </div>
       </div>
-
-      <footer>
-        <p>&copy; Company 2023</p>
-      </footer>
     </div>
+
+    <footer class="p-4 mt-auto bg-light text-center text-black">
+      <p class="mb-0">&copy; <%= t('app.company') %> 2023</p>
+    </footer>
   </body>
 
 </html>
