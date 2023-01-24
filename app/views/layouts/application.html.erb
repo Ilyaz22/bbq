@@ -31,19 +31,12 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <% flash.each do |type, text| %>
-            <div class="alert alert-primary mt-5 text-center">
-              <%= text %>
-            </div>
-          <% end %>
-          <%= yield %>
-        </div>
-        <div class="col-lg-3">
-          <p>Тест</p>
-        </div>
-      </div>
+      <% if flash[:notice].present? %>
+        <p class="alert alert-success"><%= flash[:notice] %></p>
+      <% elsif flash[:alert].present? %>
+        <p class="alert alert-danger"><%= flash[:alert] %></p>
+      <% end %>
+      <%= yield %>
     </div>
 
     <footer class="p-4 mt-auto bg-light text-center text-black">
