@@ -1,8 +1,9 @@
-<h2 class="text-center mt-2">Забыли пароль?</h2>
+<h2 class="text-center mt-2"><%= t("link_device.forgot_password") %></h2>
 
 <div class="row">
   <div class="col-4 mx-auto">
-    <%= form_for(resource, as: resource_name, url: password_path(resource_name), data: {turbo: false}, html: { method: :post }) do |f| %>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), data: { turbo: false },
+      html: { method: :post }) do |f| %>
 
       <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -13,7 +14,7 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "Прислать инструкцию для сброса пароля", class: "btn btn-primary" %>
+        <%= f.submit t("link_device.send_instruction"), class: "btn btn-primary" %>
         <%= render "devise/shared/links" %>
       </div>
     <% end %>

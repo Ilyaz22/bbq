@@ -16,8 +16,9 @@
 
           <% if current_user_can_edit?(@event) %>
             <div class="buffer-both">
-              <%= link_to 'Изменить', edit_event_path(@event),
-                class: 'btn btn-primary' %>
+              <%= link_to t("views.evets"), edit_event_path(@event), class: 'btn btn-primary' %>
+              <p><%= button_to t("views.delete"), event_path(@event), class: 'btn btn-danger', method: :delete,
+                form: {data: {turbo_confirm: t("views.confirm")}} %></p>
              </div>
           <% end %>
         </div>
