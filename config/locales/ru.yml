@@ -24,3 +24,13 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+  errors:
+    one: "%{count} ошибка"
+    few: "%{count} ошибки"
+    many: "%{count} ошибок"
+  link_device:
+    edit_password: "Сменить пароль"
+    log_in: "Войти"
+    sign_in: "Зарегистрироваться"
+    forgot_password: "Забыли пароль?"
+    change_password: "Сменить пароль"
