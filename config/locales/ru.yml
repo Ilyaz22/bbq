@@ -63,7 +63,7 @@ ru:
     organize: "Организовал:"
   comments:
     comment:
-    destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'

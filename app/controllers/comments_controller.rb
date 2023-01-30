@@ -13,6 +13,7 @@ class CommentsController < ApplicationController
         render 'events/show', alert: t('controllers.comments.error')
       end
     end
+  end
 
   def destroy
     def destroy
