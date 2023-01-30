@@ -36,6 +36,7 @@ ru:
     one: "%{count} ошибка"
     few: "%{count} ошибки"
     many: "%{count} ошибок"
+    self_subscription_ban: "нельзя подписываться на себя"
   link_device:
     edit_password: "Сменить пароль"
     log_in: "Войти"
