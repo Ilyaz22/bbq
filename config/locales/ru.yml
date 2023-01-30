@@ -14,6 +14,9 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      comment:
+        body: 'Комментарий'
+        user_name: 'Ваше имя'
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -36,7 +39,8 @@ ru:
     one: "%{count} ошибка"
     few: "%{count} ошибки"
     many: "%{count} ошибок"
-    self_subscription_ban: "нельзя подписываться на себя"
+    self_subscription_ban: "Нельзя подписываться на себя"
+    email_error: "Пользователь с таким email уже существует!"
   link_device:
     edit_password: "Сменить пароль"
     log_in: "Войти"

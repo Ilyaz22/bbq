@@ -7,7 +7,7 @@
       <div class="event-info-inner row">
         <div class="col-md-6">
           <div class="event-description">
-            <h1><%= @event.title %></h1>
+            <div class="mt-2"><h1><%= @event.title %></h1></div>
             <h3><%= l @event.datetime, format: :short %></h3>
             <h3><small><%= link_to @event.address,
                 "https://yandex.ru/maps/?text=#{@event.address}" %></small></h3>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 mt-4">
       <div class="event-owner">
         <h4>Зовет:</h4>
           <p><%= render partial: 'users/user', object: @event.user %></p>
