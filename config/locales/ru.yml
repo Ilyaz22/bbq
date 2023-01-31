@@ -17,6 +17,9 @@ ru:
       comment:
         body: 'Комментарий'
         user_name: 'Ваше имя'
+      subscription:
+        user_name: "Имя пользователя"
+        user_email: "Электронная почта"
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -35,6 +38,10 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+    profile: 'Профиль'
+    log_off: 'Выйти'
+    come: 'Войти'
+    register: 'Зарегистрироваться'
   errors:
     one: "%{count} ошибка"
     few: "%{count} ошибки"
@@ -66,6 +73,11 @@ ru:
     edit_profile: "Редактировать профиль"
     no_events: "Пользователь пока не организовал ни одного события"
     organize: "Организовал:"
+    send: "Отправить"
+    call: "Зовет:"
+    will_go: "Пойдут:"
+    i_will_go: "Я пойду:"
+    subscribe: "Подписаться"
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'

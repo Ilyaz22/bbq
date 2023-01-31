@@ -18,11 +18,11 @@
           <ul class="nav navbar-nav">
 
             <% if user_signed_in? %>
-              <li class="nav-item"><%= link_to 'Профиль', current_user, class: "nav-link" %></li>
-              <li class="nav-item"><%= button_to 'Выйти', destroy_user_session_path, method: :delete, class: "nav-link btn" %></li>
+              <li class="nav-item"><%= link_to t('app.profile'), current_user, class: "nav-link" %></li>
+              <li class="nav-item"><%= button_to t('app.log_off'), destroy_user_session_path, method: :delete, class: "nav-link btn" %></li>
             <% else %>
-              <li class="nav-item"><%= link_to 'Войти', new_user_session_path, class: "nav-link" %></li>
-              <li class="nav-item"><%= link_to 'Зарегистрироваться', new_user_registration_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to t('app.come'), new_user_session_path, class: "nav-link" %></li>
+              <li class="nav-item"><%= link_to t('app.register'), new_user_registration_path, class: "nav-link" %></li>
             <% end %>
 
           </ul>
@@ -43,5 +43,4 @@
       <p class="mb-0">&copy; <%= t('app.company') %> 2023</p>
     </footer>
   </body>
-
 </html>

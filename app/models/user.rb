@@ -23,5 +23,4 @@ class User < ApplicationRecord
     Subscription.where(user_id: nil, user_email: self.email)
     .update_all(user_id: self.id)
   end
-
 end
