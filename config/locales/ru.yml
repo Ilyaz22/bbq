@@ -9,6 +9,7 @@ ru:
         name: 'Имя'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
+        avatar: 'Аватар'
       event:
         title: 'Название'
         address: 'Место проведения'
@@ -58,6 +59,12 @@ ru:
     registration: "Зарегистрироваться"
     password: "Пароль"
     password again: "Введите пароль еще раз"
+    edit: "Редактирование юзера"
+    current_password: "Текущий пароль"
+    update: "Обновить"
+    delete_account: "Удалить аккаунт"
+    return: "Вернуться"
+    destroy_account: "Вы уверены точно хотите удалить свой аккаунт?"
   views:
     save: "Сохранить"
     back: "вернуться"
