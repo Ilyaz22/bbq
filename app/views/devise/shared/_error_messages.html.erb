@@ -1,7 +1,7 @@
 <% if resource.errors.any? %>
   <div class="alert alert-danger alert-dismissible" id="error_explanation">
 
-      <p>В форме <%= t("errors", count: resource.errors.count) %></p>
+      <p><%= t("link_device.in_form") %> <%= t("errors", count: resource.errors.count) %></p>
       <ul>
         <% resource.errors.full_messages.each do |message| %>
           <li><%= message %></li>

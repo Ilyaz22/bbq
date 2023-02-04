@@ -1,4 +1,4 @@
-<h2 class="text-center mt-2">Вход</h2>
+<h2 class="text-center mt-2"><%= t("link_device.login") %></h2>
 
 <div class="row">
   <div class="col-4 mx-auto">
@@ -13,7 +13,7 @@
 
        <div class="input-group my-3">
         <span class="input-group-text"><i class="bi bi-file-lock"></i></span>
-        <%= f.password_field :password, class: "form-control", placeholder: "Пароль",
+        <%= f.password_field :password, class: "form-control", placeholder: t("link_device.password"),
           autocomplete: "current-password" %>
       </div>
 
@@ -25,8 +25,8 @@
       <% end %>
 
       <div class="actions mb-2">
-        <%= f.submit "Войти", class: 'btn btn-primary' %> или
-        <%= link_to 'вернуться', :back, class: 'text-decoration-none' %>
+        <%= f.submit t("link_device.log_in"), class: 'btn btn-primary' %> <%= t("link_device.or") %> 
+        <%= link_to t("link_device.return"), :back, class: 'text-decoration-none' %>
         <%= render "devise/shared/links" %>
       </div>
 

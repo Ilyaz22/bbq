@@ -21,6 +21,15 @@ ru:
       subscription:
         user_name: "Имя пользователя"
         user_email: "Электронная почта"
+        user: "Пользователь"
+    errors:
+      models:
+        subscription:
+          attributes:
+            user:
+              self_subscription_ban: "с таким email уже существует!"
+            user_email: 
+              email_exists: "уже существует!" 
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -36,6 +45,10 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
@@ -47,8 +60,6 @@ ru:
     one: "%{count} ошибка"
     few: "%{count} ошибки"
     many: "%{count} ошибок"
-    self_subscription_ban: "Нельзя подписываться на себя"
-    email_error: "Пользователь с таким email уже существует!"
   link_device:
     edit_password: "Сменить пароль"
     log_in: "Войти"
@@ -63,8 +74,11 @@ ru:
     current_password: "Текущий пароль"
     update: "Обновить"
     delete_account: "Удалить аккаунт"
-    return: "Вернуться"
+    return: "вернуться"
     destroy_account: "Вы уверены точно хотите удалить свой аккаунт?"
+    login: "Вход"
+    or: "или"
+    in_form: "В форме"
   views:
     save: "Сохранить"
     back: "вернуться"

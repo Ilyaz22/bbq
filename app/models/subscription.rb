@@ -2,8 +2,6 @@ class Subscription < ApplicationRecord
   belongs_to :event
   belongs_to :user, optional: true
 
-  validates :event, presence: true
-
   validates :user_name, presence: true, unless: -> { user.present? }
   validates :user_email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }, unless: -> { user.present? }
 
@@ -33,13 +31,13 @@ class Subscription < ApplicationRecord
 
   def self_subscription_ban
     if event.user == user
-      errors.add(:base, I18n.t('errors.self_subscription_ban'))
+      errors.add(:user, :self_subscription_ban)
     end
   end
 
   def email_exists
     if User.find_by(email: user_email)
-      errors.add(:base, I18n.t('errors.email_error'))
+      errors.add(:user_email, :email_exists)
     end
   end
 end
