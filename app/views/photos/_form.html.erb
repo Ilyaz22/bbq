@@ -2,11 +2,13 @@
   <%= render partial: 'partials/form_errors', locals: {model: photo} %>
 
   <div class="form-group">
-    <%= f.label :photo %>
+    <div class="mb-2">
+      <%= f.label :photo %>
+    </div>
     <%= f.file_field :photo %>
   </div>
 
   <div class="actions mt-3">
-    <%= f.submit 'Загрузить', class: 'btn btn-primary' %>
+    <%= f.submit t("views.download"), class: 'btn btn-primary' %>
   </div>
 <% end %>

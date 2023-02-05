@@ -11,16 +11,16 @@
 <% end %>
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
-  <p class="my-1"><%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %></p>
+  <p class="my-1"><%= link_to t("link_device.no_instructions"), new_confirmation_path(resource_name) %></p>
 <% end %>
 
 <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
-  <p class="my-1"><%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %></p>
+  <p class="my-1"><%= link_to t("link_device.no_unlock_instructions"), new_unlock_path(resource_name) %></p>
 <% end %>
 
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
-    <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider),
+    <%= link_to "#{t("link_device.no_unlock_instructions")} #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider),
       method: :post %><br />
   <% end %>
 <% end %>
