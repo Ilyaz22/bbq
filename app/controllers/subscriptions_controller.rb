@@ -7,9 +7,14 @@ class SubscriptionsController < ApplicationController
     @new_subscription.user = current_user
 
     if @new_subscription.save
-      redirect_to @event, notice: t('controllers.subscriptions.created')
+      # Если сохранилось, отправляем письмо
+      # Пишем название класса, потом метода и передаём параметры
+      # И доставляем методом .deliver_now (то есть в этом же потоке)
+      EventMailer.subscription(@event, @new_subscription).deliver_now
+
+      redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
     else
-      render 'events/show', alert: t('controllers.subscriptions.error')
+      render 'events/show', alert: I18n.t('controllers.subscriptions.error')
     end
   end
 
