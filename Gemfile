@@ -6,6 +6,9 @@ ruby "3.1.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
+gem "mailjet"
+gem "dotenv-rails"
+
 gem "carrierwave"
 gem "rmagick"
 

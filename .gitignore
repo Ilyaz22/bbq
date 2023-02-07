@@ -36,3 +36,5 @@
 .idea
 
 public/uploads
+
+.env
