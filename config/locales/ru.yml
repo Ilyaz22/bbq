@@ -121,7 +121,7 @@ ru:
     photo: "Фото"
     new_photo: "Новое фото"
     new_subscription: "Новая подписка на"
-    new_comment: "Новый комментарий @"
+    new_comment: "Новый комментарий в событии:"
     comment:
       title: 'Новый комментарий'
       author: 'Автор'
