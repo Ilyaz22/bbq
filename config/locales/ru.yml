@@ -110,6 +110,7 @@ ru:
     subscribe: "Подписаться"
     download: "Загрузить"
     added: "Добавил"
+    or: "Или"
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
@@ -117,6 +118,10 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
   event_mailer:
+    photo: "Фото"
+    new_photo: "Новое фото"
+    new_subscription: "Новая подписка на"
+    new_comment: "Новый комментарий @"
     comment:
       title: 'Новый комментарий'
       author: 'Автор'
