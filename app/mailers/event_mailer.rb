@@ -18,6 +18,7 @@ class EventMailer < ApplicationMailer
   def photo(photo, email)
     @event = photo.event
     @photo = photo
+    @photo_link = root_url.chop + photo.photo.url
 
     mail to: email, subject: I18n.t("event_mailer.new_photo")
   end
