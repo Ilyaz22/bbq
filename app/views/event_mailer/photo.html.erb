@@ -1,5 +1,4 @@
 <h1><%= t('event_mailer.new_photo') %></h1>
 <p><%= t('event_mailer.comment.event') %>: <%= link_to @event.title, event_url(@event) %></p>
-<p><%= t('event_mailer.photo') %>:</p>
 <img src="<%= @photo_link %>" alt="photo">
 <h3><%= @photo.user.name %></h3>

@@ -118,22 +118,22 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
   event_mailer:
-    photo: "Фото"
-    new_photo: "Новое фото"
-    new_subscription: "Новая подписка на"
-    new_comment: "Новый комментарий в событии:"
+    photo:
+      subject: "Новое фото в событии: %{title}"
     comment:
-      title: 'Новый комментарий'
-      author: 'Автор'
-      event: 'Событие'
-      datetime: 'Состоится'
-      owner: 'Организатор'
+      title: "Новый комментарий"
+      author: "Автор"
+      event: "Событие"
+      datetime: "Состоится"
+      owner: "Организатор"
+      subject: "Новый комментарий в событии: %{title}"
     subscription:
-      title: 'Новая подписка'
-      name: 'Имя'
-      email: 'Email'
-      author: 'Автор'
-      event: 'Событие'
-      datetime: 'Состоится'
-      owner: 'Организатор'
+      title: "Новая подписка"
+      name: "Имя"
+      email: "Email"
+      author: "Автор"
+      event: "Событие"
+      datetime: "Состоится"
+      owner: "Организатор"
+      subject: "Новая подписка на событие: %{title}"
     
