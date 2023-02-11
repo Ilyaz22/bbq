@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.4"
 
 gem "mailjet"
 gem "dotenv-rails"
+gem "letter_opener", group: :development
 
 gem "carrierwave"
 gem "rmagick"
