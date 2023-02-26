@@ -5,7 +5,7 @@ set :application, "bbq"
 set :repo_url, "https://github.com/Ilyaz22/bbq"
 
 # Папка, где будет храниться приложение
-set :deploy_to, '/home/deploy/www'
+set :deploy_to, '/home/deploy/bbq'
 
 # Файлы, которые лежат вне репозитория
 append :linked_files, 'config/master.key', '.env'
