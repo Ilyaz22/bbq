@@ -22,4 +22,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: bbq
+  user: capistrano
+  password: ENV['BBQ_PASSWORD']
