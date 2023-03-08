@@ -1,24 +1,34 @@
-# README
+## BBQ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[BBQ](http:/ilyaz.site) - cайт, помогающий организовывать события. Для каждого события реализован функционал подписчиков, фотографий и комментариев.
 
-Things you may want to cover:
+Подписчики полчуают рассылку по email, если у события появился новый комментарий или фото.
 
-* Ruby version
+Работает на `Ruby 3.1.3` и `Rails 7.0.1`
 
-* System dependencies
+## Установка
 
-* Configuration
+Установите `Bundler`:
+```
+bundle install
+```
 
-* Database creation
+Сгенерируйте свой `master.key` и `credentials.yml.enc`:
+```
+rails credentials:edit
+```
 
-* Database initialization
+Создайте БД:
+```
+rails db:create
+```
 
-* How to run the test suite
+Запустите миграции:
+```
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Запустите сервер:
+```
+rails s
+```
