@@ -8,6 +8,8 @@
 
 ## Установка
 
+Заполните `.env.example` и переименуйте его в `.env`
+
 Установите `Bundler`:
 ```
 bundle install
