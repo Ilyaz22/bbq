@@ -136,4 +136,6 @@ ru:
       datetime: "Состоится"
       owner: "Организатор"
       subject: "Новая подписка на событие: %{title}"
+  pundit:
+    not_authorized: "Действие недоступно!"
     
