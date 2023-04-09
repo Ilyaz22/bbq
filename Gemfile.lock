@@ -145,6 +145,8 @@ GEM
       addressable (~> 2.8)
     letter_opener (1.8.1)
       launchy (>= 2.2, < 3)
+    lightbox2-rails (2.8.2.1)
+      railties (>= 3.1)
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -311,6 +313,7 @@ DEPENDENCIES
   factory_bot_rails
   jsbundling-rails
   letter_opener
+  lightbox2-rails
   mailjet
   pg
   puma (~> 5.0)

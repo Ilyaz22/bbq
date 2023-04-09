@@ -8,6 +8,8 @@ gem "rails", "~> 7.0.4"
 
 gem "pundit"
 
+gem "lightbox2-rails"
+
 gem "mailjet"
 gem "dotenv-rails"
 gem "letter_opener", group: :development

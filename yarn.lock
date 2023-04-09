@@ -322,6 +322,11 @@ browserslist@^4.14.5:
     node-releases "^2.0.6"
     update-browserslist-db "^1.0.9"
 
+bs5-lightbox@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/bs5-lightbox/-/bs5-lightbox-1.8.3.tgz#01b5ad4fe10c81c4e88ef38ba4bffdcc04b9e411"
+  integrity sha512-fEIjplDAtWw17vi6dFeu7+Td52sk3qQ9FbOOVSpWM3nqio502vZKIA0Q0De9D9ah44BGd+zOKUsikRPlKE2hFg==
+
 buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
