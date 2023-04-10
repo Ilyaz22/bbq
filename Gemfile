@@ -6,6 +6,8 @@ ruby "3.1.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
+gem "resque"
+
 gem "pundit"
 
 gem "lightbox2-rails"
@@ -72,6 +74,8 @@ group :development do
   gem 'capistrano-passenger'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
+
+  gem "capistrano-resque", require: false
 
   gem 'rspec-rails'
   gem 'factory_bot_rails'

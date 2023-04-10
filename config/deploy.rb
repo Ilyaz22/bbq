@@ -11,6 +11,8 @@ set :deploy_to, '/home/deploy/bbq'
 append :linked_files, 'config/master.key', '.env'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
 
+after 'deploy:restart', 'resque:restart'
+
 set :branch, 'main'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

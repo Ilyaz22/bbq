@@ -61,4 +61,8 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   config.action_mailer.delivery_method = :letter_opener
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.active_job.queue_adapter = :resque
+  # Префикс для имени очередей
+  config.active_job.queue_name_prefix = "bbq_#{Rails.env}"
 end
