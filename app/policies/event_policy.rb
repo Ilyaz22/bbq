@@ -29,7 +29,7 @@ class EventPolicy < ApplicationPolicy
 
   class Scope < Scope
     def resolve
-      user.present? ? scope.where(user: user) : scope.all
+      scope.all
     end
   end
 
