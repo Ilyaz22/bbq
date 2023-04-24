@@ -6,7 +6,6 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many  :subscriptions
 
-
   validates :name, presence: true, length: {maximum: 35}
 
   before_validation :set_name, on: :create
@@ -22,11 +21,10 @@ class User < ApplicationRecord
       email: access_token.info.email,
       password: Devise.friendly_token[0, 20],
       name: access_token.info.name,
+      remote_avatar_url: access_token.info.image,
       provider: access_token.provider,
       uid: access_token.uid
     )
-
-    user
   end
 
   def send_devise_notification(notification, *args)
